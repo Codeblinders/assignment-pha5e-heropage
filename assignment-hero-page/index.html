@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIME</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="logo" >ANIME</a>
+        <nav>
+            <a href="index.html" >Home</a>
+            <a href="index.html" >ABOUT US</a>
+            <a href="index.html" >SERIES</a>
+            <a href="index.html" >CONTACT</a>
+            <a href="index.html" class="lang">EN</a>
+        </nav>
+    </header>
+
+    <!-- Animation Section -->
+    <div class="container">
+        <svg viewBox="0 0 600 200">
+            <!-- Masked Water Fill using the SAME text -->
+            <defs>
+                <mask id="text-mask">
+                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" dy="0.35em" fill="white"
+                          font-family="Archivo Black" font-size="100px">ANIME</text>
+                </mask>
+            </defs>
+            <!-- Water Fill Animation (uses the same mask as outline) -->
+            <rect width="100%" height="100%" fill="white" mask="url(#text-mask)" class="water-mask"></rect>
+
+            <!-- Stroke Outline Animation -->
+            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" dy="0.35em"
+                  class="outlined-text">ANIME</text>
+            <!-- Solid Fill Animation -->
+            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" dy="0.35em"
+                  class="solid-text">ANIME</text>
+        </svg>
+    </div>
+
+
+    <!-- Main Hero Section -->
+    <section class="hero">
+        <h1>
+            <p>BEST</p>
+            <p>ANIMATION</p>
+            <p>ANIME SERIES</p>
+            <p>TILL NOW .</p>
+        </h1>
+        <div class="image-container">
+<img src="images/3.jpg" class="hero-image" >
+<img src="images/4.jpg" class="hero-image" >
+<img src="images/1.jpg" class="hero-image" >
+<img src="images/6.jpg" class="hero-image" >
+
+        </div>
+    </section>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js">
+
+    </script>   
+     <script src="script.js"> 
+      </script>
+
+</body>
+</html>
