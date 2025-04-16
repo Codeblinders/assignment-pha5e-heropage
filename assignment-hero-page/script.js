@@ -16,8 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.warn("Required elements (.hero, .hero h1 p, or .hero-image) not found in the DOM.");
     }
 
-    // Force reset for testing (remove this later once animations are confirmed working)
-    sessionStorage.removeItem("animationPlayed");
+   
 
     if (!sessionStorage.getItem("animationPlayed")) {
         console.log("Playing animations for the first time");
